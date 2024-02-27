@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class=" w-full min-h-16 px-4 sm:px-10 py-3 flex flex-col sm:flex-row justify-between bg-zinc-600 text-white">
+        <div class="w-full sm:w-1/4 h-12 flex items-center justify-between sm:justify-start">
+            <img class="w-10 h-5 sm:w-20 sm:h-10 rounded-lg" src="/images/logo.png" alt="">
+            <button class="sm:hidden" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class=" w-full sm:w-3/4 flex flex-col sm:flex-row items-center gap-5">
+            <a href="/" class="text-teal-200  hover:text-white text-xl">Home</a>
+            <a href="/job" class="text-teal-200 hover:text-white text-xl">Jobs</a>
+            <a href="#" class="text-teal-200 hover:text-white text-xl">Internships</a>
+            <a href="#" class="text-teal-200 hover:text-white text-xl">About Us</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.w-full.sm\\:w-3\\/4');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
